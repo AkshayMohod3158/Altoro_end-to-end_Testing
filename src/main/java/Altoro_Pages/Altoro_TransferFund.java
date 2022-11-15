@@ -44,6 +44,9 @@ public class Altoro_TransferFund extends Altoro_BaseClass{
 	@FindBy (xpath = "//input[@id=\"transfer\"]")
 	public WebElement transfermoneybutton;
 	
+	@FindBy (xpath = "//span[@id=\"_ctl0__ctl0_Content_Main_postResp\"]")
+	public WebElement transfermsg;
+	
 	public Altoro_TransferFund() throws IOException {
 		PageFactory.initElements(driver, this);	
 	}
@@ -65,5 +68,9 @@ public class Altoro_TransferFund extends Altoro_BaseClass{
 		return driver.getTitle();
 	}
 
+	public String validatedTransferMsg() {
+		String msg = transfermsg.getText();
+		return msg;
+	}
 	
 }

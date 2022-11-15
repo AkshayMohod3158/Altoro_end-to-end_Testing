@@ -101,7 +101,6 @@ public class Altoro_ContactUs extends Altoro_BaseClass {
 		submitbutton.click();
 		singoffbutton.click();
 		
-		
 		return Contactus.isDisplayed();
 	}
 

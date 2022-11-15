@@ -24,11 +24,15 @@ public class TC003_Altoro_viewMyAccSummary extends Altoro_BaseClass {
 		Altoro_BaseClass.initialization();
 		AltoroAcc = new Altoro_ViewMYAccSummary();
 	}
-	@Test
+	@Test(priority = 1)
 	public void ValidateMyAccSummary() {
 		String viewmyacc = AltoroAcc.ValidateMyAccSummary(System.getProperty("validusername"), System.getProperty("validpassword"));
-		
+		String deposite = AltoroAcc.bal.getText();
+		String depositebal = "$777.00";
+		Assert.assertEquals(depositebal, deposite);
+		System.out.println("Validated Deposite Balance :" + depositebal);
 	}
+	
     @AfterMethod
     public void Teardown() {
     	driver.quit();

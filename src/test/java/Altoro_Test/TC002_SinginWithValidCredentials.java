@@ -23,11 +23,22 @@ public class TC002_SinginWithValidCredentials extends Altoro_BaseClass {
 		Altoro_BaseClass.initialization();
 		 AVC = new Altoro_Singinforvalid_credentials();
 	}
-	@Test
+	@Test(priority = 1)
 	public void Singin_Altoro_ValidCredential() throws InterruptedException {
 		boolean ValidUser = AVC.singinpageforvaliduser(props.getProperty("validusername"), props.getProperty("validpassword"));
-	    Assert.assertTrue(true);
+		
+		String altoroTitel = driver.getTitle();
+		String acttitel = "Altoro Mutual";
+		Assert.assertEquals(acttitel, altoroTitel);
+		
+		String actmsg = AVC.User_msg.getText();
+		String exc_msg = "Hello Admin User";
+		Assert.assertEquals(actmsg, exc_msg);
+		System.out.println("Validation after SingIn : " + exc_msg);
+		
+		
 	}
+	
 	@AfterMethod
 	public void Teardown() {
 		driver.quit();

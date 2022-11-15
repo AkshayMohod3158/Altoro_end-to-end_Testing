@@ -24,6 +24,7 @@ public class TC006_AltoroContactUsandOnlineForm extends Altoro_BaseClass{
 	}
 	@Test
 	public void onlineformandcontactus() {
+		@SuppressWarnings("unused")
 		boolean filltheform = contactusonlineform.ContactAltoro();
 	}
 	

@@ -32,7 +32,7 @@ public class Altoro_ViewMYAccSummary extends Altoro_BaseClass{
 	@FindBy (xpath = "//input[@id=\"btnGetAccount\"]")
 	public WebElement GoButton;
 	
-	@FindBy (xpath = "(//td[contains(text(),\"$118446744078182190000.00\")])[2]")
+	@FindBy (xpath = "(//td[@width=\"84\"])[1]")
 	public WebElement bal;
 
 	public Altoro_ViewMYAccSummary() throws IOException {
@@ -50,5 +50,8 @@ public class Altoro_ViewMYAccSummary extends Altoro_BaseClass{
 		GoButton.click();
 		return driver.getTitle();
 	}
-	
+	public String Validated_Bal() {
+		String availabel_Bal = bal.getText();
+		return availabel_Bal;
+	}
 }

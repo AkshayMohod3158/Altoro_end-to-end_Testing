@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-09T22:27:18 IST" name="Default suite" finished-at="2022-11-09T22:27:34 IST" duration-ms="15432">
+  <suite started-at="2022-11-15T15:02:13 IST" name="Default suite" finished-at="2022-11-15T15:02:26 IST" duration-ms="13187">
     <groups>
     </groups>
-    <test started-at="2022-11-09T22:27:18 IST" name="Default test" finished-at="2022-11-09T22:27:34 IST" duration-ms="15432">
-      <class name="Altoro_Test.TC006_AltoroContactUsandOnlineForm">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Altoro_Test.TC006_AltoroContactUsandOnlineForm@50eac852]" started-at="2022-11-09T22:27:18 IST" name="setup" finished-at="2022-11-09T22:27:22 IST" duration-ms="3779" status="PASS">
+    <test started-at="2022-11-15T15:02:13 IST" name="Default test" finished-at="2022-11-15T15:02:26 IST" duration-ms="13187">
+      <class name="Altoro_Test.TC005_Altoro_ViewRecentTransactions">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Altoro_Test.TC005_Altoro_ViewRecentTransactions@20ce78ec]" started-at="2022-11-15T15:02:13 IST" name="setup" finished-at="2022-11-15T15:02:18 IST" duration-ms="5407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="onlineformandcontactus()[pri:0, instance:Altoro_Test.TC006_AltoroContactUsandOnlineForm@50eac852]" started-at="2022-11-09T22:27:22 IST" name="onlineformandcontactus" finished-at="2022-11-09T22:27:33 IST" duration-ms="11432" status="PASS">
+        <test-method signature="recenttransactions()[pri:1, instance:Altoro_Test.TC005_Altoro_ViewRecentTransactions@20ce78ec]" started-at="2022-11-15T15:02:18 IST" name="recenttransactions" finished-at="2022-11-15T15:02:26 IST" duration-ms="7500" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- onlineformandcontactus -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:Altoro_Test.TC006_AltoroContactUsandOnlineForm@50eac852]" started-at="2022-11-09T22:27:33 IST" name="Teardown" finished-at="2022-11-09T22:27:34 IST" duration-ms="187" status="PASS">
+        </test-method> <!-- recenttransactions -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Altoro_Test.TC005_Altoro_ViewRecentTransactions@20ce78ec]" started-at="2022-11-15T15:02:26 IST" name="Teardown" finished-at="2022-11-15T15:02:26 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- Altoro_Test.TC006_AltoroContactUsandOnlineForm -->
+      </class> <!-- Altoro_Test.TC005_Altoro_ViewRecentTransactions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

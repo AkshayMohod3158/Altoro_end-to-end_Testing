@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Altoro_Test.TC006_AltoroContactUsandOnlineForm">
+      <class name="Altoro_Test.TC003_Altoro_viewMyAccSummary">
         <methods>
-          <include name="Teardown"/>
           <include name="setup"/>
-          <include name="onlineformandcontactus"/>
+          <include name="ValidateMyAccSummary"/>
+          <include name="Teardown"/>
         </methods>
-      </class> <!-- Altoro_Test.TC006_AltoroContactUsandOnlineForm -->
+      </class> <!-- Altoro_Test.TC003_Altoro_viewMyAccSummary -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

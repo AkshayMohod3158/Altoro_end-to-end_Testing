@@ -23,6 +23,9 @@ public class Altoro_Singinforvalid_credentials extends Altoro_BaseClass{
 	
 	@FindBy(xpath = "//a[@id=\"AccountLink\"]")
 	public WebElement myacc;
+	
+	@FindBy (xpath = "//h1[contains(text(),\"Hello Admin User\")]")
+	public WebElement User_msg;
 
 	public Altoro_Singinforvalid_credentials() throws IOException {
 		
@@ -35,7 +38,9 @@ public class Altoro_Singinforvalid_credentials extends Altoro_BaseClass{
 		PS.sendKeys(props.getProperty("validpassword"));
 		LoginButton.click();
 		
+		
 		return myacc.isDisplayed();
 	}
-
+	
+	
 }

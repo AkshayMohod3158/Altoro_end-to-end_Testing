@@ -47,6 +47,11 @@ public class Altoro_ViewRecentTransactions extends Altoro_BaseClass{
 	@FindBy (xpath ="//a[contains(text(),\"View Recent Transactions\")]")
 	public WebElement ViewRT;
 	
+	@FindBy (xpath = "(//td[text()=\"$9876.00\"])[1]")
+	public WebElement depositeamount;
+	
+	@FindBy (xpath = "(//td[text()=\"-$9876.00\"])[1]")
+	public WebElement withdrawamount;
 	
 	public Altoro_ViewRecentTransactions() throws IOException {
 		PageFactory.initElements(driver, this);
@@ -70,4 +75,11 @@ public class Altoro_ViewRecentTransactions extends Altoro_BaseClass{
 		return ViewRT.isDisplayed();
 	}
 
+	public String validatedTransaction() {
+		String transfer1 = depositeamount.getText();
+		String transfer2 = withdrawamount.getText();
+		
+		return transfer1;
+		
+	}
 }
